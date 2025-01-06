@@ -8,6 +8,8 @@ defmodule Issues.MixProject do
       version: "0.1.0",
       elixir: "~> 1.17",
       start_permanent: Mix.env() == :prod,
+      name: "Issues",
+      source_url: "https://github.com/adityacherla/issues",
       deps: deps()
     ]
   end
@@ -26,6 +28,8 @@ defmodule Issues.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
       { :httpoison, "~> 1.0.0" },
       { :poison, "~> 3.1"},
+      { :ex_doc,    "~> 0.19" },
+      { :earmark,   "~> 1.2.4"  },
     ]
   end
 
